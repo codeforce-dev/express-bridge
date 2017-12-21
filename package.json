@@ -1,0 +1,34 @@
+{
+    "name": "express-bridge",
+    "version": "1.0.0",
+    "description": "API data exchange between an public webserver and a local network without dynDNS.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Frank Hinkel",
+    "license": "MIT",
+    "dependencies": {
+        "debug-logger": "^0.4.1",
+        "express": "^4.16.2",
+        "express-request-id": "^1.4.0",
+        "path-to-regexp": "^2.1.0",
+        "socket.io": "^2.0.4"
+    },
+    "keywords": [
+        "express",
+        "expressjs",
+        "express.js",
+        "bridge",
+        "sockets",
+        "request",
+        "behind",
+        "firewall",
+        "alexa",
+        "amazon"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/feinmetz/express-bridge.git"
+    }
+}
