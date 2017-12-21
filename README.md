@@ -1,6 +1,6 @@
 # Express-Bridge for node.js
 
-API data exchange between an public webserver and a local network without dynDNS.
+Make API calls between a public webserver and a local network without dynDNS.
 
 ```
 Browser <-> Webserver (btw. Cloud) <- Express-Bridge -> Local Network (btw. Raspberry Server) -> Smart Home Device
