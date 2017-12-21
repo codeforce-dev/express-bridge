@@ -3,7 +3,7 @@
 API data exchange between an public webserver and a local network without dynDNS.
 
 ```
-Browser <--> Public Webserver (btw. Cloud) <-- Express-Bridge --> Local Network (btw. Raspberry Server) --> Smart Home Device
+Browser <-> Webserver (btw. Cloud) <- Express-Bridge -> Local Network (btw. Raspberry Server) -> Smart Home Device
 ```
 
 Express-Bridge allows data to be sent to a server on a local network without having to open the network to the outside. The bridge can be used to forward API calls from the web server to smart home devices in your private local network.
