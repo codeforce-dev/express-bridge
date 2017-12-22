@@ -1,6 +1,6 @@
 {
     "name": "express-bridge",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Make API calls between a public webserver and a local network without DynDNS.",
     "main": "index.js",
     "scripts": {

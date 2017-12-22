@@ -55,6 +55,7 @@ http://<webserver-domain>/light/livingroom/turn/on
 {
     id: 'a86ba5b6-3f25-4fb8-a5ac-3f60d06b26fe',
     method: 'GET',
+    path: '/light/livingroom/turn/on',
     headers: {
         'cache-control': 'no-cache',
         'user-agent': 'PostmanRuntime/6.4.1',
