@@ -18,7 +18,7 @@ const bridge = require('../lib/bridge');
 const server = new bridge.Server(server: {http: {port: 80}});
 
 server.start((err) => {});
-```
+``` 
 
 ### Client (local Raspberry)
 ```
