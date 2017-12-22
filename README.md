@@ -14,7 +14,7 @@ For example: Amazon Alexa makes an API call to your webserver with a "turn light
 
 ### Server (public webserver)
 ```
-const bridge = require('../lib/bridge');
+const bridge = require('express-bridge');
 const server = new bridge.Server(server: {http: {port: 80}});
 
 server.start((err) => {});
@@ -22,6 +22,7 @@ server.start((err) => {});
 
 ### Client (local raspberry)
 ```
+const bridge = require('express-bridge');
 const client = new bridge.Client('http://<webserver-domain>:80');
 
 client.route('/', (req, res, next) => {
