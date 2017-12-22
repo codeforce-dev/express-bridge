@@ -1,6 +1,6 @@
 {
     "name": "express-bridge",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Make API calls between a public webserver and a local network without dynDNS.",
     "main": "index.js",
     "scripts": {
@@ -17,15 +17,16 @@
     },
     "keywords": [
         "express",
-        "expressjs",
-        "express.js",
         "bridge",
         "sockets",
         "request",
         "behind",
         "firewall",
         "alexa",
-        "amazon"
+        "amazon",
+        "dyndns",
+        "expressjs",
+        "express.js"
     ],
     "repository": {
       "type": "git",

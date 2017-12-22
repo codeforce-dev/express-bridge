@@ -1,6 +1,6 @@
 # Express-Bridge for node.js
 
-Make API calls between a public webserver and a local network without dynDNS.
+Make API calls between a public webserver and a local network without DynDNS.
 
 ```
 Browser <-> Webserver (Cloud) <- Express-Bridge -> Local Network (btw. Raspberry) -> Smart Home Device
@@ -33,21 +33,21 @@ client.route('/', (req, res, next) => {
 client.start((err) => {});
 ```
 
-### How to work
+### How does it work
 
-1. Starting the Webserver
+1. Starting the webserver
 ```
 $ DEBUG=express-bridge/* node  examples/server-bridge.js
 ```
 
-2. Starting the local Server
+2. Starting the local server
 ```
 $ DEBUG=express-bridge/* node  examples/local-client.js
 ```
 
-3. Make a browser request
+3. Make a browser request to the webserver
 ```
-http://127.0.0.1:3000
+http://<webserver-domain>
 ```
 
 ### Incoming Data Format
