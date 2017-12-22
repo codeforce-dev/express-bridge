@@ -15,14 +15,14 @@ For example: Amazon Alexa makes an API call to your webserver with a "turn light
 ### Server (public Webserver)
 ```
 const bridge = require('../lib/bridge');
-const server = new bridge.Server(server: {http: {port: 3000}});
+const server = new bridge.Server(server: {http: {port: 80}});
 
 server.start((err) => {});
 ```
 
 ### Client (local Raspberry)
 ```
-const client = new bridge.Client('http://127.0.0.1:3000');
+const client = new bridge.Client('http://<webserver-domain>:80');
 
 client.route('/', (req, res, next) => {
     console.log('Incoming data:', req);
