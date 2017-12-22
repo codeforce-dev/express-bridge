@@ -25,7 +25,7 @@ server.start((err) => {});
 const bridge = require('express-bridge');
 const client = new bridge.Client('http://<webserver-domain>:80');
 
-client.route('/', (req, res, next) => {
+client.route('/light/:lightId/turn/:action', (req, res, next) => {
     console.log('Incoming data:', req);
     res.send({ status: 'ok' });
 });
@@ -47,10 +47,10 @@ $ DEBUG=express-bridge/* node  examples/local-client.js
 
 3. Make a browser request to the webserver
 ```
-http://<webserver-domain>
+http://<webserver-domain>/light/livingroom/turn/on
 ```
 
-### Incoming Data Format
+### Incoming message format
 ```
 {
     id: 'a86ba5b6-3f25-4fb8-a5ac-3f60d06b26fe',
@@ -64,7 +64,10 @@ http://<webserver-domain>
         'content-length': '170',
         'connection': 'keep-alive'
     },
-    params: {},
+    params: {
+        lightId: 'livingroom',
+        action: 'on'
+    },
     query: {},
     body: {}
 }
