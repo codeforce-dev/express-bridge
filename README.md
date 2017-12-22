@@ -59,7 +59,6 @@ http://<webserver-domain>/light/livingroom/turn/on
         'cache-control': 'no-cache',
         'user-agent': 'PostmanRuntime/6.4.1',
         'accept': '*/*',
-        'host': '127.0.0.1:3000',
         'accept-encoding': 'gzip, deflate',
         'content-length': '170',
         'connection': 'keep-alive'
