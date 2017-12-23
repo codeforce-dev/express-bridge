@@ -37,12 +37,12 @@ client.start((err) => {});
 
 1. Starting the webserver
 ```
-$ DEBUG=express-bridge/* node  examples/server-bridge.js
+$ DEBUG=express-bridge/* node examples/server-bridge.js
 ```
 
 2. Starting the local server
 ```
-$ DEBUG=express-bridge/* node  examples/local-client.js
+$ DEBUG=express-bridge/* node examples/local-client.js
 ```
 
 3. Make a browser request to the webserver
